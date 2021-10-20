@@ -1,37 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app.css">
-    <title>Appli météo</title>
-
-    
-       
-    
-
-   
-  
-
+    <title>L'App météo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <section id="app" >
+        <p>cliquez sur le nom de la ville pour le changer</p>
         <h1>
-            <span id="ville">...</span>
+            <p id="ville"></p>
             <span class="tooltip">Tapez une autre ville si vous le souhaitez</span>
         </h1>
-        <i class="wi wi-day-rain"></i>
-        <h2>
-            <span id="temperature"></span> °c  (<span id="conditions"></span>)
-        </h2>
+        <i class="wi"></i>
+        <h3>
+            température <span id="temperature"></span> °c  (<span id="conditions"></span>)
+        </h3>
+        <h3>
+            ressentie <span id="ressenti"></span> °c
+        </h3>
+        <h3>
+            
+            <span id="humidity"></span> <i class="sunIcon wi wi-humidity"></i> humidité
+        </h3>
+        <h3>
+            <i class="sunIcon wi wi-sunrise"></i> <span id="hourSunrise"></span>
+        </h3>
+        <h3 class="sunset">
+            <i class="sunIcon wi wi-sunset"></i> <span id="hourSunset"></span>
+        </h3>
     </section>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
     <script src="./app.js"></script>
 </body>
 
